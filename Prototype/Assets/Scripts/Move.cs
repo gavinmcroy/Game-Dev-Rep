@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Move : MonoBehaviour
 {
@@ -8,8 +6,6 @@ public class Move : MonoBehaviour
     private float _xMove;
     private float _yMove;
     private Rigidbody2D _rigidBody2D;
-    
-
 
     void Awake()
     {
