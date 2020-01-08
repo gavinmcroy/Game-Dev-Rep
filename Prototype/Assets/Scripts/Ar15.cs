@@ -35,7 +35,7 @@ public class Ar15 : MonoBehaviour
         while(true)
         {
             Debug.Log("Shes reading");
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(.25f);
         }
     }
 
