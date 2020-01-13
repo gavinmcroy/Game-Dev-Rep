@@ -5,13 +5,22 @@ using Vector3 = UnityEngine.Vector3;
 
 public class Ar15 : MonoBehaviour
 {
+    /* TODO
+     * TODO -Left off on implementation of hit scan features
+     * TODO  and other minor template methods. Also figuring
+     * TODO  out class organization and communication between
+     * TODO  Ar15 and other world objects
+     */
+    
     [SerializeField] private Transform playerPosition;
     [SerializeField] private int unityUnits;
-    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private int bulletInMag;
+
+    //---Width to height ratio (16:9)
     private const float ScreenRatio = 1.777f;
 
-    private Coroutine _firingCoroutine; 
-    
+    private Coroutine _firingCoroutine;
+
     private void FixedUpdate()
     {
         FireWeapon();
@@ -29,28 +38,42 @@ public class Ar15 : MonoBehaviour
     IEnumerator FireContinuously()
     {
         /* TODO ---Finish implementation of projectile
-        * 
-        *
-        */
-        while(true)
+         *
+         * 
+         *
+         */
+        while (true)
         {
-            Debug.Log("Shes reading");
-            yield return new WaitForSeconds(.25f);
+            //---TODO playSound
+            //---TODO Screen shake
+            //---TODO drawTracer
+            //---TODO Deduct Total Bullets
+            yield return new WaitForSeconds(.1f);
         }
+    }
+
+    private void Reload()
+    {
+        /* TODO---Finish implementation of reload
+         *
+         *
+         * 
+         */
     }
 
     private void FireWeapon()
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            _firingCoroutine =  StartCoroutine(FireContinuously());
+            _firingCoroutine = StartCoroutine(FireContinuously());
         }
-        if(Input.GetButtonUp("Fire1"))
+
+        if (Input.GetButtonUp("Fire1"))
         {
             StopCoroutine(_firingCoroutine);
         }
     }
-    
+
     private void PointToMouseLocation()
     {
         Vector2 tmp = new Vector2(Input.mousePosition.x / Screen.height * unityUnits,
