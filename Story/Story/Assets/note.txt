@@ -1,5 +1,0 @@
-Game Idea:
--Entire goal is to land an object onto a moving cup on the bottom. 
--Catch is to create my own background and sprites
--As well as create my own audio
--Must be finished in by the first upcoming Sunday which dates to 4/9/2020
