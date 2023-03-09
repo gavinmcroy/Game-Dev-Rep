@@ -1,0 +1,4 @@
+Basic Engine V1 To Do List 
+1. particles Need to Follow Delta Time
+2. Image_speed Needs to be based on Delta Time 
+3. Rain Particle affect needs to follow player 

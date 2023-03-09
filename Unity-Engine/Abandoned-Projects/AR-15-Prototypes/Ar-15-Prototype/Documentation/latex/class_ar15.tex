@@ -1,0 +1,243 @@
+\hypertarget{class_ar15}{}\doxysection{Ar15 Class Reference}
+\label{class_ar15}\index{Ar15@{Ar15}}
+
+
+Inheritance diagram for Ar15\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_ar15__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ar15\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_ar15__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ar15_afeae749a123b1bb43ed2b4d0ebdb45ac}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_ar15_ace95637e60227d5aed4471de877be197}{Move\+With\+Player}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_ar15_a83d2cef09a13fcd6e912a331fbe22ebc}{Fire\+Continuously}} ()
+\item 
+void \mbox{\hyperlink{class_ar15_a6526475e776f3041698f19cb508e255e}{Deal\+Damage}} ()
+\item 
+void \mbox{\hyperlink{class_ar15_a3bd50a15f2dfd2b91464f2723fd0665e}{Reload}} ()
+\item 
+void \mbox{\hyperlink{class_ar15_a9beddf8c81d2d23c0cd442b4d909c77f}{Fire\+Weapon}} ()
+\item 
+void \mbox{\hyperlink{class_ar15_af77e325b0b7cecf1435ebdf6ccbd6317}{Point\+To\+Mouse\+Location}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_ar15_a3584ec0f2efeb74fb1dafb8bf8508db4}{player\+Position}}
+\item 
+int \mbox{\hyperlink{class_ar15_a567d6c4de0cee6ff77bb96f4d6272e45}{unity\+Units}}
+\item 
+Coroutine \mbox{\hyperlink{class_ar15_a66a73e51527005b16a68fe4a3717868b}{\+\_\+firing\+Coroutine}}
+\item 
+float \mbox{\hyperlink{class_ar15_a5b6d63dcb048dd85cfc851c79b5349f9}{\+\_\+rotation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_ar15_a243f07fa44ec5c4cc99ee220d60a6771}{Screen\+Ratio}} = 1.\+777f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+AR 15 C\+L\+A\+SS Handles Movement and Behavior of A\+R15 Weapon. Includes Different Variables and stuff T\+O\+DO -\/Left off on implementation of hit scan features T\+O\+DO and other minor template methods. Also figuring T\+O\+DO out class organization and communication between T\+O\+DO \mbox{\hyperlink{class_ar15}{Ar15}} and other world objects T\+O\+DO play\+Sound T\+O\+DO Screen shake T\+O\+DO draw\+Tracer T\+O\+DO Deduct Total Bullets T\+O\+DO Get ray to draw where mouse is pointing 
+
+Definition at line 21 of file Ar15.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ar15_a6526475e776f3041698f19cb508e255e}\label{class_ar15_a6526475e776f3041698f19cb508e255e}} 
+\index{Ar15@{Ar15}!DealDamage@{DealDamage}}
+\index{DealDamage@{DealDamage}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{DealDamage()}{DealDamage()}}
+{\footnotesize\ttfamily void Ar15.\+Deal\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 97 of file Ar15.\+cs.
+
+\mbox{\Hypertarget{class_ar15_a83d2cef09a13fcd6e912a331fbe22ebc}\label{class_ar15_a83d2cef09a13fcd6e912a331fbe22ebc}} 
+\index{Ar15@{Ar15}!FireContinuously@{FireContinuously}}
+\index{FireContinuously@{FireContinuously}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{FireContinuously()}{FireContinuously()}}
+{\footnotesize\ttfamily I\+Enumerator Ar15.\+Fire\+Continuously (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+T\+O\+DO ---Finish implementation of projectile Shoots a raycast corresponding towards mouse position, if collision is detected logs a successful hit if rotation is less than 0 than raycast draws backwards, making transform.\+forward negative flips it to the appropriate direction 
+
+Definition at line 65 of file Ar15.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_ar15_a83d2cef09a13fcd6e912a331fbe22ebc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ar15_a83d2cef09a13fcd6e912a331fbe22ebc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ar15_a9beddf8c81d2d23c0cd442b4d909c77f}\label{class_ar15_a9beddf8c81d2d23c0cd442b4d909c77f}} 
+\index{Ar15@{Ar15}!FireWeapon@{FireWeapon}}
+\index{FireWeapon@{FireWeapon}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{FireWeapon()}{FireWeapon()}}
+{\footnotesize\ttfamily void Ar15.\+Fire\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Starts firing coroutine when user presses \char`\"{}\+Fire1\char`\"{} and stops when key is lifted 
+
+Definition at line 115 of file Ar15.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ar15_a9beddf8c81d2d23c0cd442b4d909c77f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_ar15_a9beddf8c81d2d23c0cd442b4d909c77f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ar15_ace95637e60227d5aed4471de877be197}\label{class_ar15_ace95637e60227d5aed4471de877be197}} 
+\index{Ar15@{Ar15}!MoveWithPlayer@{MoveWithPlayer}}
+\index{MoveWithPlayer@{MoveWithPlayer}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{MoveWithPlayer()}{MoveWithPlayer()}}
+{\footnotesize\ttfamily void Ar15.\+Move\+With\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Takes the transform position of an object and sets it to the position of the player 
+
+Definition at line 52 of file Ar15.\+cs.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_ar15_ace95637e60227d5aed4471de877be197_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ar15_af77e325b0b7cecf1435ebdf6ccbd6317}\label{class_ar15_af77e325b0b7cecf1435ebdf6ccbd6317}} 
+\index{Ar15@{Ar15}!PointToMouseLocation@{PointToMouseLocation}}
+\index{PointToMouseLocation@{PointToMouseLocation}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{PointToMouseLocation()}{PointToMouseLocation()}}
+{\footnotesize\ttfamily void Ar15.\+Point\+To\+Mouse\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Calculates the angle of the mouse and tilts attached sprite appropriately to match Uses Mathf.\+Clamp to avoid a NaN scenario and to keep exceptions from occuring Mathf.\+Rad2\+Deg converts radiants into degrees and multiplies it by -\/1 as without doing so the rotation is inversed 
+
+Definition at line 134 of file Ar15.\+cs.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_ar15_af77e325b0b7cecf1435ebdf6ccbd6317_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ar15_a3bd50a15f2dfd2b91464f2723fd0665e}\label{class_ar15_a3bd50a15f2dfd2b91464f2723fd0665e}} 
+\index{Ar15@{Ar15}!Reload@{Reload}}
+\index{Reload@{Reload}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{Reload()}{Reload()}}
+{\footnotesize\ttfamily void Ar15.\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+T\+O\+DO---Finish implementation of reload 
+
+Definition at line 108 of file Ar15.\+cs.
+
+\mbox{\Hypertarget{class_ar15_afeae749a123b1bb43ed2b4d0ebdb45ac}\label{class_ar15_afeae749a123b1bb43ed2b4d0ebdb45ac}} 
+\index{Ar15@{Ar15}!Update@{Update}}
+\index{Update@{Update}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ar15.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Ar15.\+cs.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ar15_afeae749a123b1bb43ed2b4d0ebdb45ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ar15_a66a73e51527005b16a68fe4a3717868b}\label{class_ar15_a66a73e51527005b16a68fe4a3717868b}} 
+\index{Ar15@{Ar15}!\_firingCoroutine@{\_firingCoroutine}}
+\index{\_firingCoroutine@{\_firingCoroutine}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{\_firingCoroutine}{\_firingCoroutine}}
+{\footnotesize\ttfamily Coroutine Ar15.\+\_\+firing\+Coroutine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Ar15.\+cs.
+
+\mbox{\Hypertarget{class_ar15_a5b6d63dcb048dd85cfc851c79b5349f9}\label{class_ar15_a5b6d63dcb048dd85cfc851c79b5349f9}} 
+\index{Ar15@{Ar15}!\_rotation@{\_rotation}}
+\index{\_rotation@{\_rotation}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{\_rotation}{\_rotation}}
+{\footnotesize\ttfamily float Ar15.\+\_\+rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+Stores rotation of the attached object 
+
+Definition at line 40 of file Ar15.\+cs.
+
+\mbox{\Hypertarget{class_ar15_a3584ec0f2efeb74fb1dafb8bf8508db4}\label{class_ar15_a3584ec0f2efeb74fb1dafb8bf8508db4}} 
+\index{Ar15@{Ar15}!playerPosition@{playerPosition}}
+\index{playerPosition@{playerPosition}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{playerPosition}{playerPosition}}
+{\footnotesize\ttfamily Transform Ar15.\+player\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Ar15.\+cs.
+
+\mbox{\Hypertarget{class_ar15_a243f07fa44ec5c4cc99ee220d60a6771}\label{class_ar15_a243f07fa44ec5c4cc99ee220d60a6771}} 
+\index{Ar15@{Ar15}!ScreenRatio@{ScreenRatio}}
+\index{ScreenRatio@{ScreenRatio}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{ScreenRatio}{ScreenRatio}}
+{\footnotesize\ttfamily const float Ar15.\+Screen\+Ratio = 1.\+777f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Ratio of a 16\+:9 Screen 
+
+Definition at line 33 of file Ar15.\+cs.
+
+\mbox{\Hypertarget{class_ar15_a567d6c4de0cee6ff77bb96f4d6272e45}\label{class_ar15_a567d6c4de0cee6ff77bb96f4d6272e45}} 
+\index{Ar15@{Ar15}!unityUnits@{unityUnits}}
+\index{unityUnits@{unityUnits}!Ar15@{Ar15}}
+\doxysubsubsection{\texorpdfstring{unityUnits}{unityUnits}}
+{\footnotesize\ttfamily int Ar15.\+unity\+Units\hspace{0.3cm}{\ttfamily [private]}}
+
+Unity Units is the size of the camera $\ast$ 2 
+
+Definition at line 28 of file Ar15.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_ar15_8cs}{Ar15.\+cs}}\end{DoxyCompactItemize}

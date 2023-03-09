@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66edd25f3d1dd4f5a893c718d26e7f30, type: 3}
+  m_Name: Mayor Warning
+  m_EditorClassIdentifier: 
+  conversationLines:
+  - speakingCharacterName: Mayor
+    conversationText: UH HELLO YES UH CAN YOU HEAR ME
+    displayPic: {fileID: 21300000, guid: 37bcab6c014d941aaa84270b0ff7b68c, type: 3}
+  - speakingCharacterName: Player
+    conversationText: Uh
+    displayPic: {fileID: 21300000, guid: 965abefeb67c74256856bd251e0b1034, type: 3}
+  - speakingCharacterName: Mayor
+    conversationText: ..
+    displayPic: {fileID: 21300000, guid: 37bcab6c014d941aaa84270b0ff7b68c, type: 3}
+  - speakingCharacterName: Mayor
+    conversationText: 'Can''t come over here. '
+    displayPic: {fileID: 21300000, guid: 37bcab6c014d941aaa84270b0ff7b68c, type: 3}
+  - speakingCharacterName: Mayor
+    conversationText: Bad stuff is happening...
+    displayPic: {fileID: 21300000, guid: 37bcab6c014d941aaa84270b0ff7b68c, type: 3}
+  - speakingCharacterName: Mayor
+    conversationText: But ive spoken enough
+    displayPic: {fileID: 21300000, guid: 37bcab6c014d941aaa84270b0ff7b68c, type: 3}
+  - speakingCharacterName: Mayor
+    conversationText: We never met
+    displayPic: {fileID: 21300000, guid: 37bcab6c014d941aaa84270b0ff7b68c, type: 3}

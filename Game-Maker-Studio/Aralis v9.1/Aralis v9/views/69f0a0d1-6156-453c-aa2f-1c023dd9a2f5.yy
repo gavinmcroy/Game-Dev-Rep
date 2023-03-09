@@ -1,0 +1,30 @@
+{
+    "id": "69f0a0d1-6156-453c-aa2f-1c023dd9a2f5",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "69f0a0d1-6156-453c-aa2f-1c023dd9a2f5",
+    "children": [
+        "fca192c9-53f4-45e1-ae66-30861ba9a47c",
+        "afcedcb0-2a24-4300-8211-41e75f0767a4",
+        "c839505b-539b-4e64-9245-0236e80561a5",
+        "c8200495-0983-4d87-8317-ef6548f70590",
+        "83cb1494-1c88-4ea6-9f6d-57ffc38bcbf5",
+        "50861a7f-fc52-4e35-adc4-359822595646",
+        "f500ad4c-c896-4242-9efb-31476d76220e",
+        "f1d78930-6182-4bea-9419-8f3ae00a6830",
+        "57553bf0-7ef4-4c51-ace8-1dd4778722f1",
+        "0c71cd56-7e63-4045-8106-37502a71e30d",
+        "c1991fee-acff-4bfb-8246-00ce4456968f",
+        "14b9bf02-7666-4bef-83d7-6a565f300c1a",
+        "e8be177d-ce5c-4a2d-86e6-83029540f2f4",
+        "c310df23-701c-4866-bc2a-2a9c2be956aa",
+        "2292b504-4c2a-4809-8f9d-1a0cc3dc6d41",
+        "aac4f1f4-4fe4-40f5-bbaf-f25a2bc04fd3",
+        "f0dfdd7c-d2c8-4a85-ab89-3a04095fa92d",
+        "3d00fc36-a50b-4d3f-ad2c-fcce7bd9192b"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Inventory Sprites",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

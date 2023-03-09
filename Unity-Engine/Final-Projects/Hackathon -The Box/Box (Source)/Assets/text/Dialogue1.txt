@@ -1,0 +1,5 @@
+﻿Welcome to the post office\nWill you accept the job? (Y/N)
+Great! I need you to deliver\na box to 120 Cherry Road
+You will be paid with great \nrewards!
+Unbelievable! How dare you \nreject this offer!
+You will take this box and \ndeliver it to 120 Cherry Road!

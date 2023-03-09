@@ -1,0 +1,156 @@
+\hypertarget{class_move}{}\doxysection{Move Class Reference}
+\label{class_move}\index{Move@{Move}}
+
+
+Inheritance diagram for Move\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_move__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Move\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_move__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_move_ad049aad36550a7369fddd204eed1ebac}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_move_aa993ca0c0450f5ad56c7d09aaabb6832}{Fixed\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_move_ad833b3c75fa6549305f78f9224f3a1bf}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_move_aa38039860501d9fa25113ad0478cab6a}{Movement}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_move_a188b5f6bb6dd1c5b3f56334edcf89c2e}{move\+Speed}} = 5
+\item 
+float \mbox{\hyperlink{class_move_ac51487735491a72d18e95f73689a1e72}{\+\_\+x\+Move}}
+\item 
+float \mbox{\hyperlink{class_move_a33c23c53bdea56c598a4c8e4131a2575}{\+\_\+y\+Move}}
+\item 
+Rigidbody2D \mbox{\hyperlink{class_move_acfdafe2c9d795cdfa8d4545c5f7d4e56}{\+\_\+rigid\+Body2D}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls movement of player through keyboard presses
+
+T\+O\+DO\+: take input.\+Get\+Axis\+Raw and place inside update add physics based movement in fixed\+Update Goal is to prevent miss calls to input due to fixed update 
+
+Definition at line 11 of file Move.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_move_ad049aad36550a7369fddd204eed1ebac}\label{class_move_ad049aad36550a7369fddd204eed1ebac}} 
+\index{Move@{Move}!Awake@{Awake}}
+\index{Awake@{Awake}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Move.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 18 of file Move.\+cs.
+
+\mbox{\Hypertarget{class_move_aa993ca0c0450f5ad56c7d09aaabb6832}\label{class_move_aa993ca0c0450f5ad56c7d09aaabb6832}} 
+\index{Move@{Move}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Move.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Move.\+cs.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_move_aa993ca0c0450f5ad56c7d09aaabb6832_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_move_aa38039860501d9fa25113ad0478cab6a}\label{class_move_aa38039860501d9fa25113ad0478cab6a}} 
+\index{Move@{Move}!Movement@{Movement}}
+\index{Movement@{Movement}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{Movement()}{Movement()}}
+{\footnotesize\ttfamily void Move.\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Moves player based on rigid\+Body2d.\+velocity, also calculates magnitude of move vector to make sure player remains at one speed 
+
+Definition at line 38 of file Move.\+cs.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_move_aa38039860501d9fa25113ad0478cab6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_move_ad833b3c75fa6549305f78f9224f3a1bf}\label{class_move_ad833b3c75fa6549305f78f9224f3a1bf}} 
+\index{Move@{Move}!Update@{Update}}
+\index{Update@{Update}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Move.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Move.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_move_acfdafe2c9d795cdfa8d4545c5f7d4e56}\label{class_move_acfdafe2c9d795cdfa8d4545c5f7d4e56}} 
+\index{Move@{Move}!\_rigidBody2D@{\_rigidBody2D}}
+\index{\_rigidBody2D@{\_rigidBody2D}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{\_rigidBody2D}{\_rigidBody2D}}
+{\footnotesize\ttfamily Rigidbody2D Move.\+\_\+rigid\+Body2D\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Move.\+cs.
+
+\mbox{\Hypertarget{class_move_ac51487735491a72d18e95f73689a1e72}\label{class_move_ac51487735491a72d18e95f73689a1e72}} 
+\index{Move@{Move}!\_xMove@{\_xMove}}
+\index{\_xMove@{\_xMove}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{\_xMove}{\_xMove}}
+{\footnotesize\ttfamily float Move.\+\_\+x\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file Move.\+cs.
+
+\mbox{\Hypertarget{class_move_a33c23c53bdea56c598a4c8e4131a2575}\label{class_move_a33c23c53bdea56c598a4c8e4131a2575}} 
+\index{Move@{Move}!\_yMove@{\_yMove}}
+\index{\_yMove@{\_yMove}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{\_yMove}{\_yMove}}
+{\footnotesize\ttfamily float Move.\+\_\+y\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file Move.\+cs.
+
+\mbox{\Hypertarget{class_move_a188b5f6bb6dd1c5b3f56334edcf89c2e}\label{class_move_a188b5f6bb6dd1c5b3f56334edcf89c2e}} 
+\index{Move@{Move}!moveSpeed@{moveSpeed}}
+\index{moveSpeed@{moveSpeed}!Move@{Move}}
+\doxysubsubsection{\texorpdfstring{moveSpeed}{moveSpeed}}
+{\footnotesize\ttfamily float Move.\+move\+Speed = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Move.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_move_8cs}{Move.\+cs}}\end{DoxyCompactItemize}
